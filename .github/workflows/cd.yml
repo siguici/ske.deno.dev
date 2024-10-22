@@ -11,7 +11,7 @@ jobs:
 
     environment:
       name: production
-      url: https://annoy.deno.dev
+      url: https://ske.deno.dev
 
     permissions:
       id-token: write
@@ -22,7 +22,7 @@ jobs:
         operating-system: [ubuntu-latest]
         deno-version: [1.41]
 
-    name: 🚀 Deploy Annoy to ${{ matrix.operating-system }} on Deno-${{ matrix.deno-version }}
+    name: 🚀 Deploy ske.deno.dev to ${{ matrix.operating-system }} on Deno-${{ matrix.deno-version }}
 
     steps:
       - name: 🚚 Get latest code
@@ -42,5 +42,5 @@ jobs:
       - name: 📂 Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: annoy
+          project: ske
           entrypoint: main.ts
