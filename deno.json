@@ -1,5 +1,6 @@
 {
   "lock": false,
+  "license": "AGPL-3.0-or-later",
   "tasks": {
     "check": "deno fmt --check && deno lint && deno check **/*.ts",
     "fix": "deno lint && deno fmt",
