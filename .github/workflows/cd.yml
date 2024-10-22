@@ -33,9 +33,6 @@ jobs:
         with:
           deno-version: ${{ matrix.deno-version }}
 
-      - name: 📦️ Build assets
-        run: deno task build
-
       - name: ⚗️ Check files
         run: deno task check
 
@@ -43,4 +40,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: ske
-          entrypoint: main.ts
+          entrypoint: server.ts
