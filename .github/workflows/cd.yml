@@ -20,7 +20,7 @@ jobs:
     strategy:
       matrix:
         operating-system: [ubuntu-latest]
-        deno-version: [1.41]
+        deno-version: [2.0]
 
     name: 🚀 Deploy ske.deno.dev to ${{ matrix.operating-system }} on Deno-${{ matrix.deno-version }}
 
